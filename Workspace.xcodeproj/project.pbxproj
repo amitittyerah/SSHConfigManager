@@ -18,6 +18,10 @@
 		19720B6B18C1AF6500BCD1F9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19720B4A18C1AF6500BCD1F9 /* Cocoa.framework */; };
 		19720B7318C1AF6500BCD1F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19720B7118C1AF6500BCD1F9 /* InfoPlist.strings */; };
 		19720B7518C1AF6500BCD1F9 /* WorkspaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19720B7418C1AF6500BCD1F9 /* WorkspaceTests.m */; };
+		19720B8018C1B12400BCD1F9 /* SSHConfigParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19720B7F18C1B12400BCD1F9 /* SSHConfigParser.m */; };
+		19720B8318C1B5B500BCD1F9 /* SSHConfigItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 19720B8218C1B5B500BCD1F9 /* SSHConfigItem.m */; };
+		19720B8E18C1E4C400BCD1F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19720B8C18C1E4C400BCD1F9 /* ViewController.m */; };
+		19720B8F18C1E4C400BCD1F9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19720B8D18C1E4C400BCD1F9 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,13 @@
 		19720B7018C1AF6500BCD1F9 /* WorkspaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkspaceTests-Info.plist"; sourceTree = "<group>"; };
 		19720B7218C1AF6500BCD1F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19720B7418C1AF6500BCD1F9 /* WorkspaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkspaceTests.m; sourceTree = "<group>"; };
+		19720B7E18C1B12400BCD1F9 /* SSHConfigParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSHConfigParser.h; path = SSHConfigParser/SSHConfigParser.h; sourceTree = "<group>"; };
+		19720B7F18C1B12400BCD1F9 /* SSHConfigParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSHConfigParser.m; path = SSHConfigParser/SSHConfigParser.m; sourceTree = "<group>"; };
+		19720B8118C1B5B500BCD1F9 /* SSHConfigItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSHConfigItem.h; path = SSHConfigItem/SSHConfigItem.h; sourceTree = "<group>"; };
+		19720B8218C1B5B500BCD1F9 /* SSHConfigItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSHConfigItem.m; path = SSHConfigItem/SSHConfigItem.m; sourceTree = "<group>"; };
+		19720B8B18C1E4C400BCD1F9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		19720B8C18C1E4C400BCD1F9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19720B8D18C1E4C400BCD1F9 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +131,13 @@
 				19720B5F18C1AF6500BCD1F9 /* MainMenu.xib */,
 				19720B6218C1AF6500BCD1F9 /* Images.xcassets */,
 				19720B5118C1AF6500BCD1F9 /* Supporting Files */,
+				19720B7E18C1B12400BCD1F9 /* SSHConfigParser.h */,
+				19720B7F18C1B12400BCD1F9 /* SSHConfigParser.m */,
+				19720B8118C1B5B500BCD1F9 /* SSHConfigItem.h */,
+				19720B8218C1B5B500BCD1F9 /* SSHConfigItem.m */,
+				19720B8B18C1E4C400BCD1F9 /* ViewController.h */,
+				19720B8C18C1E4C400BCD1F9 /* ViewController.m */,
+				19720B8D18C1E4C400BCD1F9 /* ViewController.xib */,
 			);
 			path = Workspace;
 			sourceTree = "<group>";
@@ -233,6 +251,7 @@
 				19720B5518C1AF6500BCD1F9 /* InfoPlist.strings in Resources */,
 				19720B6318C1AF6500BCD1F9 /* Images.xcassets in Resources */,
 				19720B5B18C1AF6500BCD1F9 /* Credits.rtf in Resources */,
+				19720B8F18C1E4C400BCD1F9 /* ViewController.xib in Resources */,
 				19720B6118C1AF6500BCD1F9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19720B8E18C1E4C400BCD1F9 /* ViewController.m in Sources */,
 				19720B5E18C1AF6500BCD1F9 /* AppDelegate.m in Sources */,
+				19720B8318C1B5B500BCD1F9 /* SSHConfigItem.m in Sources */,
+				19720B8018C1B12400BCD1F9 /* SSHConfigParser.m in Sources */,
 				19720B5718C1AF6500BCD1F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
